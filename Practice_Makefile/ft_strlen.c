@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: okarnjan <okarnjan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okarnjan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/31 00:04:15 by okarnjan          #+#    #+#             */
-/*   Updated: 2022/08/31 19:46:33 by okarnjan         ###   ########.fr       */
+/*   Created: 2022/09/16 21:10:21 by okarnjan          #+#    #+#             */
+/*   Updated: 2022/09/16 21:15:05 by okarnjan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-
-int	ft_tolower(int c)
+int	ft_strlen(char *str)
 {
-	if (ft_isalpha(c))
-		if (c < 91)
-			return (c + 32);
-	return (c);
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
